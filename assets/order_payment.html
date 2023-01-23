@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Payment</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logotitle.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css inline for order_payment  -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .5s linear;
+}
+
+.waterjug{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background-color: #27ae60 ;
+}
+
+.waterjug form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+.waterjug form .ruw{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.waterjug form .ruw .cool{
+  flex:1 1 250px;
+}
+
+.waterjug form .ruw .cool .tutle{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.waterjug form .ruw .cool .inputBox{
+  margin:15px 0;
+}
+
+.waterjug form .ruw .cool .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.waterjug form .ruw .cool .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.waterjug form .ruw .cool .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.waterjug form .ruw .cool .flex{
+  display: flex;
+  gap:15px;
+}
+
+.waterjug form .ruw .cool .flex .inputBox{
+  margin-top: 5px;
+}
+
+.waterjug form .ruw .cool .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.waterjug form .sabmit-btn{
+  padding:5px;
+  padding-left: 37%;
+  padding-right: 37%;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.waterjug form .sabmit-btn:hover{
+  background: #2ecc71;
+}
+</style>
+</head>
+<body>
+<div class="waterjug">
+
+    <form action="purchase-successful.html">
+
+        <div class="ruw">
+
+            <div class="cool">
+
+                <h3 class="tutle">Billing Address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Juan Dela Cruz">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="your.email@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="Building - Street - Barangay">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Manila">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="Metro Manila">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="tutle">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span><br>
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="Juan M. Dela Cruz">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="December">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2023">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="123">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+        <a href="purchase-sucessful.html" class="sabmit-btn">Proceed to Check out</a>
+    </form>
+
+</div>
+
+        <!Footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Donwload App for Android and ios mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/googleplay.png">
+                        <img src="images/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logosmall.png">
+                    <p>Our shop offers a wide variety of stickers for all types of interests and personalities. From cute and quirky to cool
+                        and edgy, we have something for everyone.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Bismar</p>
+        </div>
+    </div>
+</body>
+</html>
